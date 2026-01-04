@@ -117,6 +117,7 @@ nav {
     color: #FFF8E7;
     border-radius: 10px;
     margin-bottom:5px;
+    cursor: pointer;
 }
 
 
@@ -149,7 +150,7 @@ nav ul li a{
     text-align: center;
     border-radius: 4px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    margin: 40px 0;
+    margin: 20px 0;
     background-color: #FFF8E7;
     color: #5C4033;
     justify-content: center;
@@ -191,7 +192,7 @@ h3{
     font-weight: bold;
 }
 .contact-info{
-     padding: 40px;
+     padding-top: 10px;
      background-color: #FFF8E7;
       text-align: center;
     display: grid;
@@ -242,7 +243,7 @@ form{
     height: 350px;
     margin: auto;
     background-color:#5C4033;
-    padding: 20px;
+    padding: 10px;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     justify-content: center;
     margin-top: 100px;
@@ -258,7 +259,7 @@ form{
     gap: 15px;
     margin-top: 20px;
     width: 400px;
-    margin-left: auto;
+    margin-left: 10px;
     margin-right: auto;
 }
 .contact-form label{
@@ -285,7 +286,8 @@ form{
 .submit{
     cursor: pointer;
     background-color:#FFF8E7;
-    padding: 5px;
+    color: black;
+    padding: 15px;
     width: 100px;
     height: 40px;
     margin-top: 20px;
@@ -303,3 +305,32 @@ form{
     margin-bottom:10px;
 }
 
+.message{
+    padding: 5px;
+    width: 150px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .container {
+    padding: 10px;
+  }
+}
+
+.quantity{
+    padding: 5px;
+    border: 1px solid #5C4033;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 80px;
+    margin-top: 10px;
+}
