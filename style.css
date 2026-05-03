@@ -20,15 +20,20 @@ header h1{
     padding-bottom:5px;
 }
 
+header h3{
+    
+}
+
 header nav {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr; /* left | center | right */
-    align-items: center;
+    align-items:end;
+    justify-content: left;
     margin-top: 10px;
 }
 
 .searchbtn {
-    grid-column: 2; /* center column */
+    grid-column:1; /* center column */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -36,8 +41,9 @@ header nav {
 }
 
 #searchbar {
-    width: 80%; /* makes it long */
-    padding: 10px 15px;
+    width: 600px; /* makes it long */
+    margin-left: 200px;
+    padding: 10px 10px;
     border-radius: 25px;
     border: 1px solid #5C4033;
     outline: none;
@@ -62,14 +68,15 @@ header nav {
 /* CONTACT LINK */
 nav ul {
     justify-self: start;
-    margin: 0;              /* remove default spacing */
-    padding: 0;
+    margin:0;              /* remove default spacing */
+    padding-top: -400px;
+    padding-bottom: -450px;
     display: flex;
     align-items: center;    /* aligns it vertically with search bar */
     height: 100%;
     position: relative;
-    top: -35px; 
-    font-size: 25px;/* adjust -1px or -3px if needed */
+    font-size: 15px;/* adjust -1px or -3px if needed */
+    
 
 }
 
@@ -120,6 +127,7 @@ nav a {
     margin-top:5px;
     padding:5px;
     font-size: 12px;
+    margin-left:-100px;
     
 }
 
@@ -127,12 +135,15 @@ nav a {
 .bakery {
     display: block;
     margin: 10px auto;
+    margin-top: -32px;
+    margin-left: 150px;
     padding: 10px;
     border: none;
     border-radius: 8px;
     background-color: #5C4033;
     color: #FFF8E7;
     cursor: pointer;
+
 }
 
 .bakery:hover {
@@ -173,7 +184,7 @@ form {
     padding: 10px;
     border: 1px solid #5C4033;
     border-radius: 8px;
-    font-size: 16px;
+    font-size: 10px;
     width: 100%;
 }
 
