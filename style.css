@@ -25,25 +25,23 @@ header h3{
 }
 
 header nav {
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr; /* left | center | right */
-    align-items:end;
-    justify-content: left;
-    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
 }
 
 .searchbtn {
-    grid-column:1; /* center column */
+    flex: 1;
     display: flex;
-    align-items: center;
     justify-content: center;
-    cursor: pointer;
 }
 
 #searchbar {
-    width: 600px; /* makes it long */
-    margin-left: 200px;
-    padding: 10px 10px;
+    width: 100%;
+    max-width: 500px;
+    padding: 10px;
     border-radius: 25px;
     border: 1px solid #5C4033;
     outline: none;
@@ -67,23 +65,16 @@ header nav {
 
 /* CONTACT LINK */
 nav ul {
-    justify-self: start;
-    margin:0;              /* remove default spacing */
-    padding-top: -400px;
-    padding-bottom: -450px;
-    display: flex;
-    align-items: center;    /* aligns it vertically with search bar */
-    height: 100%;
-    position: relative;
-    font-size: 15px;/* adjust -1px or -3px if needed */
-    
-
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 nav ul li {
     display: flex;
     align-items: center;
 }
+
 nav a {
     text-decoration: none;
     color: #5C4033;
@@ -103,7 +94,7 @@ nav a {
 
 .products-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* 4 per row instead of 2 */
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     gap: 15px;
 }
 
@@ -124,26 +115,20 @@ nav a {
 
 /* QTY */
 .quantity {
-    margin-top:5px;
-    padding:5px;
+    margin-top: 10px;
+    padding: 6px;
     font-size: 12px;
-    margin-left:-100px;
-    
 }
 
-/* ADD TO CART */
 .bakery {
     display: block;
     margin: 10px auto;
-    margin-top: -32px;
-    margin-left: 150px;
     padding: 10px;
     border: none;
     border-radius: 8px;
     background-color: #5C4033;
     color: #FFF8E7;
     cursor: pointer;
-
 }
 
 .bakery:hover {
@@ -274,5 +259,26 @@ form {
 @media (max-width: 768px) {
     .products-grid {
         grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+
+    header nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        display: flex;
+        gap: 10px;
+    }
+
+    #searchbar {
+        width: 90%;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
     }
 }
