@@ -95,7 +95,7 @@ nav a {
 .products-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 15px;
+    gap: 15px
 }
 
 /* PRODUCT CARD */
@@ -105,7 +105,8 @@ nav a {
     padding: 10px; /* reduced */
     border-radius: 10px;
     text-align: center;
-    font-size: 14px; /* smaller text */
+    font-size: 14px;
+    height: 420px; 
 }
 
 .products-grid img {
