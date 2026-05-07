@@ -102,8 +102,8 @@ nav a {
 .products-grid div {
     background-color: #FFF8E7;
     color: #5C4033;
-    padding: 10px; /* reduced */
-    border-radius: 10px;
+    padding: 3px; /* reduced */
+    border-radius: 8px;
     text-align: center;
     font-size: 14px;
     height: 420px; 
@@ -116,14 +116,15 @@ nav a {
 
 /* QTY */
 .quantity {
-    margin-top: 10px;
+    margin-top: 5px;
+    margin-right: 10px;
     padding: 6px;
     font-size: 12px;
 }
 
 .bakery {
-    display: block;
-    margin: 10px auto;
+    display: inline-block;
+    margin-top: 10px;
     padding: 10px;
     border: none;
     border-radius: 8px;
@@ -222,7 +223,7 @@ form {
 }
 
 .contact-info p {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
 }
 
@@ -237,7 +238,7 @@ form {
 .bi-envelope-fill,
 .bi-shop-window,
 .bi-whatsapp {
-    font-size: 40px;
+    font-size:30px;
     margin-bottom: 10px;
 }
 
