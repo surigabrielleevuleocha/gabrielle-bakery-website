@@ -95,7 +95,7 @@ nav a {
 .products-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 15px
+    gap: 15px;
 }
 
 /* PRODUCT CARD */
@@ -225,6 +225,7 @@ form {
 .contact-info p {
     font-size: 12px;
     font-weight: bold;
+    text-align: left;
 }
 
 .contact-info a {
@@ -240,6 +241,7 @@ form {
 .bi-whatsapp {
     font-size:30px;
     margin-bottom: 10px;
+    justify-content: left;
 }
 
 /* FOOTER */
