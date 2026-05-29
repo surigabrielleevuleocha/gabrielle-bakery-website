@@ -7,21 +7,28 @@
     <link rel="icon" href="images/suri's crust.png" type="image/x-icon"></link>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+ rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <h1>Suri's Crust</h1>
 
         <nav>
+            <div class="image">
+                <img src="images/suri's crust.png" width="100px" height="90px">
+                <pagination class="text">Suri's Crust</pagination>
+            </div>
             <div class="searchbtn">
                 <input type="search" placeholder="Search" id="searchbar">
                 <i class="bi bi-search"></i>
             </div>
 
-            <div class="btn">
-                <button id="cart">Cart <i class="bi bi-cart"></i></button>
-                <button id="return-order">Return & Order</button>
+            <div class="nav-buttons">
+                <button id="cart" class="cart">Cart <i class="bi bi-cart"></i></button>
+                <button id="return-order" class="track-order">Track Order</button>
             </div>
 
             <ul>
@@ -32,6 +39,7 @@
 
     <section class="intro">
         <h2>Welcome to Suri's Crust Bakery</h2>
+        <p>Where Every Crumb Feels Like Home</p>
     </section>
 
     <section class="products">
